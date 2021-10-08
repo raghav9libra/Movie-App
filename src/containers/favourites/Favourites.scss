@@ -1,26 +1,15 @@
-body {
-	margin: 0;
-	padding: 0;
-	background-color: rgba(0, 0, 0, 0.602);
-	color: white;
-	h3 {
-		margin: 0;
-	}
-}
-
-.movie-home-wrapper {
-	display: flex;
-	flex-direction: column;
+.fav-wrapper {
 	width: 90%;
 	margin: 0 auto;
-	margin-top: 2%;
+	margin-top: 4%;
 	header {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: space-around;
 		h3 {
 			text-align: center;
 			font-size: 3rem;
+			margin-left: 30%;
 		}
 		a {
 			cursor: pointer;
@@ -38,12 +27,13 @@ body {
 			}
 		}
 	}
-
-	.crousel-title-wrapper {
+	.fav-crousel-wrapper {
 		display: flex;
-		flex-direction: column;
-		h4 {
-			font-size: 2rem;
+		align-items: center;
+		justify-content: space-around;
+		margin-top: 5%;
+		.btn-wrapper {
+			display: none;
 		}
 	}
 }

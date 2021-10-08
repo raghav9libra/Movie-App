@@ -4,3 +4,7 @@ const baseUrl = "https://api.themoviedb.org/3/movie/";
 export const topRatedUrl = `${baseUrl}top_rated?api_key=${apiKey}&language=en-US&page=1`;
 export const PopularUrl = `${baseUrl}popular?api_key=${apiKey}&language=en-US&page=1`;
 export const NowPlaying = `${baseUrl}upcoming?api_key=${apiKey}&language=en-US&page=1`;
+export const GetMovieDetailsUrl = (movie_id) => {
+	let url = `https://api.themoviedb.org/3/movie/${movie_id}?api_key=${apiKey}&language=en-US`;
+	return url;
+};

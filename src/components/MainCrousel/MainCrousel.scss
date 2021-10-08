@@ -3,10 +3,34 @@
 	justify-content: space-around;
 	margin-top: 2%;
 	margin-bottom: 2%;
+	position: relative;
 	img {
 		width: 200px;
 		border-radius: 16px;
 		box-shadow: 0 0px 20px;
 		cursor: pointer;
+		&:hover {
+			box-shadow: 0 0px 80px;
+		}
+	}
+	.btn-wrapper {
+		width: 200px;
+		z-index: 10;
+		display: flex;
+		position: absolute;
+		bottom: 10%;
+		align-items: center;
+		justify-content: space-around;
+		a {
+			border: 1px solid grey;
+			border-radius: 12px;
+			padding: 0.25em;
+			font-size: bold;
+			background-color: rgba(0, 0, 0, 0.472);
+			cursor: pointer;
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.733);
+			}
+		}
 	}
 }
